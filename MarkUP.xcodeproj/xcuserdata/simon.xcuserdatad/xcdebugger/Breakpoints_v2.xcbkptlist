@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "56044171-01E4-41D2-8852-BB3E5070DCE8"
+            uuid = "241C6789-5887-424B-9F03-5244F5BCBD41"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MarkUP/PLMControlBar.swift"
+            filePath = "MarkUP/SupportingComponents/PLMSideLayerBar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "layoutSubviews()"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "showPublishAlert()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

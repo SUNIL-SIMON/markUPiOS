@@ -250,7 +250,7 @@ public class PLMTableView : UIView, UITableViewDelegate,UITableViewDataSource,PL
         }else{
             topView1.addSubview(publishButton)
 //            publishButton.setImage(UIImage(named: "Publish"), for: .normal)
-            publishButton.setTitle("Publish", for: .normal)
+            publishButton.setTitle("Share", for: .normal)
             publishButton.layer.borderColor = UIColor(TCAppearance.shared.theme.change.tableViewBackgroundColor).cgColor
             publishButton.layer.borderWidth = 1
             publishButton.layer.cornerRadius = 8
@@ -301,7 +301,7 @@ public class PLMTableView : UIView, UITableViewDelegate,UITableViewDataSource,PL
         delegate?.changeMode()
     }
     @objc func showPublishAlert(){
-        delegate?.showPublishAlert()
+        PLMPresenter.shared.sheetDataSource.showShare = true
     }
     @objc func dropDownClicked(){
         

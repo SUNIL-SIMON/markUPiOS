@@ -124,7 +124,7 @@ public struct PLMPlanListingCollectionView: View {
                                  ForEach(0..<plansListingDataSource.sheetsWithVersions.count,id:\.self){
                                      index in
                                      let b = plansListingDataSource.getSheetsWithVersions(index:index)
-                                     PLMPlansListingCellView(presenter: presenter, plansListingDataSource: plansListingDataSource, thumbnail : b,thumbnailwithrespVersions : plansListingDataSource.sheetsWithVersions[index*3]).frame(width: geometry.size.width*0.41,height: geometry.size.width*0.5).background(TCAppearance.shared.theme.change.tableViewCellColor).cornerRadius(10)
+                                     PLMPlansListingCellView(presenter: presenter, plansListingDataSource: plansListingDataSource, thumbnail : b,thumbnailwithrespVersions : plansListingDataSource.sheetsWithVersions[index]).frame(width: geometry.size.width*0.41,height: geometry.size.width*0.5).background(TCAppearance.shared.theme.change.tableViewCellColor).cornerRadius(10)
                                  }
                              }.padding(geometry.size.width * 0.06)
                          }

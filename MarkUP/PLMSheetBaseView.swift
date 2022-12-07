@@ -1287,54 +1287,72 @@ public class PLMSheetBaseView : UIViewController , PLMSideLayerBarDelegate, PLMC
             if shape == .ARROW
             {
                 markerLayer.selectedMarkerToBeAdded = .ARROW
+                controlBarForiPhone.arrowButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.arrowButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.arrowButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.arrowButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .RULLER
             {
                 markerLayer.selectedMarkerToBeAdded = .RULLER
+                controlBarForiPhone.measureButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.measureButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.measureButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.measureButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .PATH
             {
                 markerLayer.selectedMarkerToBeAdded = .PATH
+                controlBarForiPhone.penButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.penButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.penButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.penButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .HIGHLIGHTER
             {
                 markerLayer.selectedMarkerToBeAdded = .HIGHLIGHTER
+                controlBarForiPhone.brushButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.brushButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.brushButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.brushButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .RECT
             {
                 markerLayer.selectedMarkerToBeAdded = .RECT
+                shapeBarForiPhone.squareButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                shapeBarForiPhone.squareButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.squareButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.squareButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .ROUND
             {
                 markerLayer.selectedMarkerToBeAdded = .ROUND
+                shapeBarForiPhone.circleButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                shapeBarForiPhone.circleButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.circleButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.circleButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .ARCS
             {
                 markerLayer.selectedMarkerToBeAdded = .ARCS
+                shapeBarForiPhone.arcButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                shapeBarForiPhone.arcButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.arcButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.arcButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .TEXT
             {
                 markerLayer.selectedMarkerToBeAdded = .TEXT
+                controlBarForiPhone.textButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.textButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.textButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.textButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
             if shape == .IMAGE
             {
                 markerLayer.selectedMarkerToBeAdded = .IMAGE
+                controlBarForiPhone.imageButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
+                controlBarForiPhone.imageButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
                 controlBar.imageButton.backgroundColor = UIColor(TCAppearance.shared.theme.color.actionButtonFillColor)
                 controlBar.imageButton.lbl.textColor = UIColor(TCAppearance.shared.theme.color.actionButtonTextColor)
             }
@@ -1360,6 +1378,25 @@ public class PLMSheetBaseView : UIViewController , PLMSideLayerBarDelegate, PLMC
         controlBar.brushButton.lbl.textColor =  UIColor(TCAppearance.shared.theme.change.textLabelColor)
         controlBar.arrowButton.backgroundColor = .clear
         controlBar.arrowButton.lbl.textColor =  UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        
+        shapeBarForiPhone.squareButton.backgroundColor = .clear
+        shapeBarForiPhone.squareButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        shapeBarForiPhone.circleButton.backgroundColor = .clear
+        shapeBarForiPhone.circleButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        shapeBarForiPhone.arcButton.backgroundColor = .clear
+        shapeBarForiPhone.arcButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.textButton.backgroundColor = .clear
+        controlBarForiPhone.textButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.imageButton.backgroundColor = .clear
+        controlBarForiPhone.imageButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.measureButton.backgroundColor = .clear
+        controlBarForiPhone.measureButton.lbl.textColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.penButton.backgroundColor = .clear
+        controlBarForiPhone.penButton.lbl.textColor =  UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.brushButton.backgroundColor = .clear
+        controlBarForiPhone.brushButton.lbl.textColor =  UIColor(TCAppearance.shared.theme.change.textLabelColor)
+        controlBarForiPhone.arrowButton.backgroundColor = .clear
+        controlBarForiPhone.arrowButton.lbl.textColor =  UIColor(TCAppearance.shared.theme.change.textLabelColor)
     }
     public func showPopOver(cntrlr : PLMPopOverBaseViewCntrlr, sourceView : UIView, size : CGSize, arrowSide : UIPopoverArrowDirection, height : Float) {
         

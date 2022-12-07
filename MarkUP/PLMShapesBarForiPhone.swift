@@ -46,6 +46,7 @@ public class PLMShapesBarForiPhone : UIView, UIGestureRecognizerDelegate , UIScr
         squareButton.tintColor = UIColor(TCAppearance.shared.theme.change.textLabelColor)
         squareButton.lbl.text = "Square"
         squareButton.layer.cornerRadius = 10
+        squareButton.addTarget(self, action: #selector(selectedRectMarkerToBeAddedOnTouch), for: .touchUpInside)
 //        let gestureRecognizer1 = UILongPressGestureRecognizer(target: self, action: #selector(PLMControlBar.handleRectGesture(_:)))
 //        gestureRecognizer1.delegate = self
 //        gestureRecognizer1.cancelsTouchesInView = true
@@ -59,6 +60,7 @@ public class PLMShapesBarForiPhone : UIView, UIGestureRecognizerDelegate , UIScr
 //        gestureRecognizer2.delegate = self
 //        gestureRecognizer2.cancelsTouchesInView = true
 //        circleButton.addGestureRecognizer(gestureRecognizer2)
+        circleButton.addTarget(self, action: #selector(selectedRoundMarkerToBeAddedOnTouch), for: .touchUpInside)
         
         self.addSubview(arcButton)
         arcButton.imgView.image = UIImage(named: "couldshaper")?.withRenderingMode(.alwaysTemplate) //couldshaper
@@ -68,27 +70,41 @@ public class PLMShapesBarForiPhone : UIView, UIGestureRecognizerDelegate , UIScr
 //        gestureRecognizer5.delegate = self
 //        gestureRecognizer5.cancelsTouchesInView = true
 //        arcButton.addGestureRecognizer(gestureRecognizer5)
+        arcButton.addTarget(self, action: #selector(selectedArcsMarkerToBeAddedOnTouch), for: .touchUpInside)
 
     }
     @objc public func commentsButtonClicked(){
         print("comments")
     }
-    @objc public func selectedArrowtMarkerToBeAddedOnTouch()
+    @objc public func selectedRectMarkerToBeAddedOnTouch()
     {
-        delegate?.selectedMarkerToBeAddedOnTouch(shape: .ARROW)
+        delegate?.selectedMarkerToBeAddedOnTouch(shape: .RECT)
     }
-    @objc public func selectedHighlightMarkerToBeAddedOnTouch()
+    @objc public func selectedRoundMarkerToBeAddedOnTouch()
     {
-        delegate?.selectedMarkerToBeAddedOnTouch(shape: .HIGHLIGHTER)
+        delegate?.selectedMarkerToBeAddedOnTouch(shape: .ROUND)
     }
-    @objc public func selectedScribleMarkerToBeAddedOnTouch()
+    @objc public func selectedArcsMarkerToBeAddedOnTouch()
     {
-        delegate?.selectedMarkerToBeAddedOnTouch(shape: .PATH)
+        delegate?.selectedMarkerToBeAddedOnTouch(shape: .ARCS)
     }
-    @objc public func selectedRullerMarkerToBeAddedOnTouch()
-    {
-        delegate?.selectedMarkerToBeAddedOnTouch(shape: .RULLER)
-    }
+    
+//    @objc public func selectedArrowtMarkerToBeAddedOnTouch()
+//    {
+//        delegate?.selectedMarkerToBeAddedOnTouch(shape: .ARROW)
+//    }
+//    @objc public func selectedHighlightMarkerToBeAddedOnTouch()
+//    {
+//        delegate?.selectedMarkerToBeAddedOnTouch(shape: .HIGHLIGHTER)
+//    }
+//    @objc public func selectedScribleMarkerToBeAddedOnTouch()
+//    {
+//        delegate?.selectedMarkerToBeAddedOnTouch(shape: .PATH)
+//    }
+//    @objc public func selectedRullerMarkerToBeAddedOnTouch()
+//    {
+//        delegate?.selectedMarkerToBeAddedOnTouch(shape: .RULLER)
+//    }
     @objc public func showHideFillColorBar()
     {
         delegate?.hideColorBar(colorMode: .fill)

@@ -181,7 +181,7 @@ public struct PLMSheetView: View {
                             if sheetDataSource.selectedThumbnail.title != ""{
                                 HStack{
                                     Spacer()
-                                    titleBtn
+                                    titleBtn.frame(maxWidth: 200)
                                     Spacer()
                                 }
                             }

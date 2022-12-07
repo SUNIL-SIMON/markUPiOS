@@ -471,7 +471,7 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
     
     var brushButton = PLMControBarButton3()
     var penButton = PLMControBarButton3()
-    var commentsButton = PLMControBarButton3()
+//    var commentsButton = PLMControBarButton3()
     
     
 //    var strokeButton = PLMControBarButton1()
@@ -523,6 +523,7 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
 //        gestureRecognizer3.delegate = self
 //        gestureRecognizer3.cancelsTouchesInView = true
 //        textButton.addGestureRecognizer(gestureRecognizer3)
+        textButton.addTarget(self, action: #selector(selectedTextMarkerToBeAddedOnTouch), for: .touchUpInside)
         
         self.addSubview(imageButton)
         imageButton.imgView.image = UIImage(named: "image")?.withRenderingMode(.alwaysTemplate)
@@ -532,6 +533,7 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
 //        gestureRecognizer4.delegate = self
 //        gestureRecognizer4.cancelsTouchesInView = true
 //        imageButton.addGestureRecognizer(gestureRecognizer4)
+        imageButton.addTarget(self, action: #selector(selectedImageMarkerToBeAddedOnTouch), for: .touchUpInside)
         
         self.addSubview(brushButton)
         brushButton.imgView.image = UIImage(named: "highlighter")?.withRenderingMode(.alwaysTemplate)
@@ -553,11 +555,11 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
         measureButton.lbl.text = "Scale"
         measureButton.addTarget(self, action: #selector(selectedRullerMarkerToBeAddedOnTouch), for: .touchUpInside)
         
-        self.addSubview(commentsButton)
-        commentsButton.imgView.image = UIImage(named: "Collab")?.withRenderingMode(.alwaysTemplate)
-        commentsButton.tintColor = UIColor(TCAppearance.shared.theme.change.textLabelColor).withAlphaComponent(2)
-        commentsButton.lbl.text = "Comments"
-        commentsButton.addTarget(self, action: #selector(selectedScribleMarkerToBeAddedOnTouch), for: .touchUpInside)
+//        self.addSubview(commentsButton)
+//        commentsButton.imgView.image = UIImage(named: "Collab")?.withRenderingMode(.alwaysTemplate)
+//        commentsButton.tintColor = UIColor(TCAppearance.shared.theme.change.textLabelColor).withAlphaComponent(2)
+//        commentsButton.lbl.text = "Comments"
+//        commentsButton.addTarget(self, action: #selector(selectedScribleMarkerToBeAddedOnTouch), for: .touchUpInside)
         
 //        self.addSubview(line[0])
 //        line[0].backgroundColor = TCAppearance.shared.theme.color.PLMControlBarLine
@@ -589,6 +591,14 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
     @objc public func selectedScribleMarkerToBeAddedOnTouch()
     {
         delegate?.selectedMarkerToBeAddedOnTouch(shape: .PATH)
+    }
+    @objc public func selectedTextMarkerToBeAddedOnTouch()
+    {
+        delegate?.selectedMarkerToBeAddedOnTouch(shape: .TEXT)
+    }
+    @objc public func selectedImageMarkerToBeAddedOnTouch()
+    {
+        delegate?.selectedMarkerToBeAddedOnTouch(shape: .IMAGE)
     }
     @objc public func selectedRullerMarkerToBeAddedOnTouch()
     {
@@ -625,7 +635,7 @@ public class PLMControlBarForiPhone : UIView, UIGestureRecognizerDelegate , UISc
         arrowButton.frame = CGRect(x: (space * 2)+view, y: self.frame.size.height*0.5, width: view, height: height)
         imageButton.frame = CGRect(x: (space * 3)+(view*2), y: self.frame.size.height*0.5, width: view,height: height)
         
-        commentsButton.frame = CGRect(x: (space * 4)+(view*3), y: self.frame.size.height*0.5, width: view, height: height)
+//        commentsButton.frame = CGRect(x: (space * 4)+(view*3), y: self.frame.size.height*0.5, width: view, height: height)
         
         
 
