@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4B207F2293F6F060030E6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B207F1293F6F060030E6F0 /* AppDelegate.swift */; };
+		F4B207F4293F6F060030E6F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B207F3293F6F060030E6F0 /* SceneDelegate.swift */; };
+		F4B207F6293F6F060030E6F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B207F5293F6F060030E6F0 /* ViewController.swift */; };
+		F4B207F9293F6F060030E6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B207F7293F6F060030E6F0 /* Main.storyboard */; };
+		F4B207FC293F6F060030E6F0 /* MarkUP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B207FA293F6F060030E6F0 /* MarkUP.xcdatamodeld */; };
+		F4B207FE293F6F080030E6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B207FD293F6F080030E6F0 /* Assets.xcassets */; };
+		F4B20801293F6F080030E6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B207FF293F6F080030E6F0 /* LaunchScreen.storyboard */; };
+		F4B2080C293F6F080030E6F0 /* MarkUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2080B293F6F080030E6F0 /* MarkUPTests.swift */; };
+		F4B20816293F6F080030E6F0 /* MarkUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20815293F6F080030E6F0 /* MarkUPUITests.swift */; };
+		F4B20818293F6F080030E6F0 /* MarkUPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20817293F6F080030E6F0 /* MarkUPUITestsLaunchTests.swift */; };
+		F4B20826293F6F5E0030E6F0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20824293F6F5E0030E6F0 /* SplashScreenView.swift */; };
+		F4B20827293F6F5E0030E6F0 /* PLMMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20825293F6F5E0030E6F0 /* PLMMainView.swift */; };
+		F4B20829293F6FC00030E6F0 /* PLMPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20828293F6FC00030E6F0 /* PLMPresenter.swift */; };
+		F4B2082C293F70BE0030E6F0 /* AppearanceFramework in Frameworks */ = {isa = PBXBuildFile; productRef = F4B2082B293F70BE0030E6F0 /* AppearanceFramework */; };
+		F4B2082E293F70F90030E6F0 /* PLMTabContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2082D293F70F90030E6F0 /* PLMTabContents.swift */; };
+		F4B20834293F717B0030E6F0 /* PLMPlanListingBulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2082F293F717B0030E6F0 /* PLMPlanListingBulletView.swift */; };
+		F4B20835293F717B0030E6F0 /* PLMPlanListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20830293F717B0030E6F0 /* PLMPlanListingView.swift */; };
+		F4B20836293F717B0030E6F0 /* PLMPlanListingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20831293F717B0030E6F0 /* PLMPlanListingCollectionView.swift */; };
+		F4B20837293F717B0030E6F0 /* PLMPlansListingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20832293F717B0030E6F0 /* PLMPlansListingCellView.swift */; };
+		F4B2083B293F9B9B0030E6F0 /* PLMSheetDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20839293F9B9B0030E6F0 /* PLMSheetDataSource.swift */; };
+		F4B2083C293F9B9B0030E6F0 /* PLMSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2083A293F9B9B0030E6F0 /* PLMSheetView.swift */; };
+		F4B2083E293F9DE30030E6F0 /* PLMSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2083D293F9DE30030E6F0 /* PLMSheetController.swift */; };
+		F4B20840293F9E7F0030E6F0 /* PLMSheetBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2083F293F9E7F0030E6F0 /* PLMSheetBaseView.swift */; };
+		F4B20842293F9F530030E6F0 /* PLMPlansListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20841293F9F530030E6F0 /* PLMPlansListingDataSource.swift */; };
+		F4B20844293FA01B0030E6F0 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20843293FA01B0030E6F0 /* BlurView.swift */; };
+		F4B20846293FA0940030E6F0 /* PLMLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20845293FA0940030E6F0 /* PLMLoading.swift */; };
+		F4B20848293FA31E0030E6F0 /* PLMPlansListingDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20847293FA31E0030E6F0 /* PLMPlansListingDataTypes.swift */; };
+		F4B2084A293FB3B00030E6F0 /* AttachmentsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20849293FB3B00030E6F0 /* AttachmentsPicker.swift */; };
+		F4B2085B293FB4AD0030E6F0 /* PLMRoundMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2084C293FB4AD0030E6F0 /* PLMRoundMarker.swift */; };
+		F4B2085C293FB4AD0030E6F0 /* PLMArcsMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2084D293FB4AD0030E6F0 /* PLMArcsMarker.swift */; };
+		F4B2085D293FB4AD0030E6F0 /* PLMArrowMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2084E293FB4AD0030E6F0 /* PLMArrowMarker.swift */; };
+		F4B2085E293FB4AD0030E6F0 /* PLMRectMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2084F293FB4AD0030E6F0 /* PLMRectMarker.swift */; };
+		F4B2085F293FB4AD0030E6F0 /* PLMDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20851293FB4AD0030E6F0 /* PLMDBHandler.swift */; };
+		F4B20860293FB4AD0030E6F0 /* PLMDBProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20852293FB4AD0030E6F0 /* PLMDBProcessor.swift */; };
+		F4B20861293FB4AD0030E6F0 /* PLMTextMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20854293FB4AD0030E6F0 /* PLMTextMarker.swift */; };
+		F4B20862293FB4AD0030E6F0 /* PLMImageMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20855293FB4AD0030E6F0 /* PLMImageMarker.swift */; };
+		F4B20863293FB4AD0030E6F0 /* PLMPathMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20857293FB4AD0030E6F0 /* PLMPathMarker.swift */; };
+		F4B20864293FB4AD0030E6F0 /* PLMHighLightMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20858293FB4AD0030E6F0 /* PLMHighLightMarker.swift */; };
+		F4B20865293FB4AD0030E6F0 /* PLMRullerMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2085A293FB4AD0030E6F0 /* PLMRullerMarker.swift */; };
+		F4B20868293FB4C80030E6F0 /* PLMDragHolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20866293FB4C80030E6F0 /* PLMDragHolders.swift */; };
+		F4B20869293FB4C80030E6F0 /* PLMShapeMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20867293FB4C80030E6F0 /* PLMShapeMarker.swift */; };
+		F4B2086B293FB5B50030E6F0 /* PLMMarkedLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2086A293FB5B50030E6F0 /* PLMMarkedLayers.swift */; };
+		F4B2086D293FB5BD0030E6F0 /* PLMMarkerLayersCreaterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2086C293FB5BD0030E6F0 /* PLMMarkerLayersCreaterExt.swift */; };
+		F4B2086F293FB5C70030E6F0 /* PLMSideLayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2086E293FB5C70030E6F0 /* PLMSideLayerBar.swift */; };
+		F4B20871293FB7D10030E6F0 /* PLMColorBarForiPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20870293FB7D10030E6F0 /* PLMColorBarForiPhone.swift */; };
+		F4B20873293FB7D70030E6F0 /* PLMColorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20872293FB7D70030E6F0 /* PLMColorBar.swift */; };
+		F4B20876293FB7E80030E6F0 /* PLMImageHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20874293FB7E80030E6F0 /* PLMImageHolderView.swift */; };
+		F4B20877293FB7E80030E6F0 /* PLMControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20875293FB7E80030E6F0 /* PLMControlBar.swift */; };
+		F4B20879293FB7F10030E6F0 /* PLMShapesBarForiPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B20878293FB7F10030E6F0 /* PLMShapesBarForiPhone.swift */; };
+		F4B2087B293FB91A0030E6F0 /* PLMTextAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2087A293FB91A0030E6F0 /* PLMTextAlertView.swift */; };
+		F4B2087D293FB9620030E6F0 /* PLMSheetBaseViewPanExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2087C293FB9610030E6F0 /* PLMSheetBaseViewPanExtension.swift */; };
+		F4B20880293FBA8E0030E6F0 /* PlanSheetComputing in Frameworks */ = {isa = PBXBuildFile; productRef = F4B2087F293FBA8E0030E6F0 /* PlanSheetComputing */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B20808293F6F080030E6F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B207E6293F6F060030E6F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B207ED293F6F060030E6F0;
+			remoteInfo = MarkUP;
+		};
+		F4B20812293F6F080030E6F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B207E6293F6F060030E6F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B207ED293F6F060030E6F0;
+			remoteInfo = MarkUP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4B207EE293F6F060030E6F0 /* MarkUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B207F1293F6F060030E6F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B207F3293F6F060030E6F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4B207F5293F6F060030E6F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4B207F8293F6F060030E6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B207FB293F6F060030E6F0 /* MarkUP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarkUP.xcdatamodel; sourceTree = "<group>"; };
+		F4B207FD293F6F080030E6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4B20800293F6F080030E6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4B20802293F6F080030E6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B20807293F6F080030E6F0 /* MarkUPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkUPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B2080B293F6F080030E6F0 /* MarkUPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkUPTests.swift; sourceTree = "<group>"; };
+		F4B20811293F6F080030E6F0 /* MarkUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B20815293F6F080030E6F0 /* MarkUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkUPUITests.swift; sourceTree = "<group>"; };
+		F4B20817293F6F080030E6F0 /* MarkUPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkUPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4B20824293F6F5E0030E6F0 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		F4B20825293F6F5E0030E6F0 /* PLMMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMMainView.swift; sourceTree = "<group>"; };
+		F4B20828293F6FC00030E6F0 /* PLMPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLMPresenter.swift; sourceTree = "<group>"; };
+		F4B2082D293F70F90030E6F0 /* PLMTabContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMTabContents.swift; sourceTree = "<group>"; };
+		F4B2082F293F717B0030E6F0 /* PLMPlanListingBulletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlanListingBulletView.swift; sourceTree = "<group>"; };
+		F4B20830293F717B0030E6F0 /* PLMPlanListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlanListingView.swift; sourceTree = "<group>"; };
+		F4B20831293F717B0030E6F0 /* PLMPlanListingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlanListingCollectionView.swift; sourceTree = "<group>"; };
+		F4B20832293F717B0030E6F0 /* PLMPlansListingCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlansListingCellView.swift; sourceTree = "<group>"; };
+		F4B20839293F9B9B0030E6F0 /* PLMSheetDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMSheetDataSource.swift; sourceTree = "<group>"; };
+		F4B2083A293F9B9B0030E6F0 /* PLMSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMSheetView.swift; sourceTree = "<group>"; };
+		F4B2083D293F9DE30030E6F0 /* PLMSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMSheetController.swift; sourceTree = "<group>"; };
+		F4B2083F293F9E7F0030E6F0 /* PLMSheetBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLMSheetBaseView.swift; sourceTree = "<group>"; };
+		F4B20841293F9F530030E6F0 /* PLMPlansListingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlansListingDataSource.swift; sourceTree = "<group>"; };
+		F4B20843293FA01B0030E6F0 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		F4B20845293FA0940030E6F0 /* PLMLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLMLoading.swift; sourceTree = "<group>"; };
+		F4B20847293FA31E0030E6F0 /* PLMPlansListingDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPlansListingDataTypes.swift; sourceTree = "<group>"; };
+		F4B20849293FB3B00030E6F0 /* AttachmentsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsPicker.swift; sourceTree = "<group>"; };
+		F4B2084C293FB4AD0030E6F0 /* PLMRoundMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMRoundMarker.swift; sourceTree = "<group>"; };
+		F4B2084D293FB4AD0030E6F0 /* PLMArcsMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMArcsMarker.swift; sourceTree = "<group>"; };
+		F4B2084E293FB4AD0030E6F0 /* PLMArrowMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMArrowMarker.swift; sourceTree = "<group>"; };
+		F4B2084F293FB4AD0030E6F0 /* PLMRectMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMRectMarker.swift; sourceTree = "<group>"; };
+		F4B20851293FB4AD0030E6F0 /* PLMDBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMDBHandler.swift; sourceTree = "<group>"; };
+		F4B20852293FB4AD0030E6F0 /* PLMDBProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMDBProcessor.swift; sourceTree = "<group>"; };
+		F4B20854293FB4AD0030E6F0 /* PLMTextMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMTextMarker.swift; sourceTree = "<group>"; };
+		F4B20855293FB4AD0030E6F0 /* PLMImageMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMImageMarker.swift; sourceTree = "<group>"; };
+		F4B20857293FB4AD0030E6F0 /* PLMPathMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMPathMarker.swift; sourceTree = "<group>"; };
+		F4B20858293FB4AD0030E6F0 /* PLMHighLightMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMHighLightMarker.swift; sourceTree = "<group>"; };
+		F4B2085A293FB4AD0030E6F0 /* PLMRullerMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMRullerMarker.swift; sourceTree = "<group>"; };
+		F4B20866293FB4C80030E6F0 /* PLMDragHolders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMDragHolders.swift; sourceTree = "<group>"; };
+		F4B20867293FB4C80030E6F0 /* PLMShapeMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMShapeMarker.swift; sourceTree = "<group>"; };
+		F4B2086A293FB5B50030E6F0 /* PLMMarkedLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMMarkedLayers.swift; sourceTree = "<group>"; };
+		F4B2086C293FB5BD0030E6F0 /* PLMMarkerLayersCreaterExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMMarkerLayersCreaterExt.swift; sourceTree = "<group>"; };
+		F4B2086E293FB5C70030E6F0 /* PLMSideLayerBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMSideLayerBar.swift; sourceTree = "<group>"; };
+		F4B20870293FB7D10030E6F0 /* PLMColorBarForiPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMColorBarForiPhone.swift; sourceTree = "<group>"; };
+		F4B20872293FB7D70030E6F0 /* PLMColorBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMColorBar.swift; sourceTree = "<group>"; };
+		F4B20874293FB7E80030E6F0 /* PLMImageHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMImageHolderView.swift; sourceTree = "<group>"; };
+		F4B20875293FB7E80030E6F0 /* PLMControlBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMControlBar.swift; sourceTree = "<group>"; };
+		F4B20878293FB7F10030E6F0 /* PLMShapesBarForiPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMShapesBarForiPhone.swift; sourceTree = "<group>"; };
+		F4B2087A293FB91A0030E6F0 /* PLMTextAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMTextAlertView.swift; sourceTree = "<group>"; };
+		F4B2087C293FB9610030E6F0 /* PLMSheetBaseViewPanExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMSheetBaseViewPanExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B207EB293F6F060030E6F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B20880293FBA8E0030E6F0 /* PlanSheetComputing in Frameworks */,
+				F4B2082C293F70BE0030E6F0 /* AppearanceFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B20804293F6F080030E6F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B2080E293F6F080030E6F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4B207E5293F6F060030E6F0 = {
+			isa = PBXGroup;
+			children = (
+				F4B207F0293F6F060030E6F0 /* MarkUP */,
+				F4B2080A293F6F080030E6F0 /* MarkUPTests */,
+				F4B20814293F6F080030E6F0 /* MarkUPUITests */,
+				F4B207EF293F6F060030E6F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B207EF293F6F060030E6F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B207EE293F6F060030E6F0 /* MarkUP.app */,
+				F4B20807293F6F080030E6F0 /* MarkUPTests.xctest */,
+				F4B20811293F6F080030E6F0 /* MarkUPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B207F0293F6F060030E6F0 /* MarkUP */ = {
+			isa = PBXGroup;
+			children = (
+				F4B20853293FB4AD0030E6F0 /* AttachmentItems */,
+				F4B20856293FB4AD0030E6F0 /* DrawItems */,
+				F4B20859293FB4AD0030E6F0 /* MeasurmentsItem */,
+				F4B2084B293FB4AD0030E6F0 /* ShapesItems */,
+				F4B20850293FB4AD0030E6F0 /* SupportingComponents */,
+				F4B20847293FA31E0030E6F0 /* PLMPlansListingDataTypes.swift */,
+				F4B20841293F9F530030E6F0 /* PLMPlansListingDataSource.swift */,
+				F4B2087A293FB91A0030E6F0 /* PLMTextAlertView.swift */,
+				F4B2087C293FB9610030E6F0 /* PLMSheetBaseViewPanExtension.swift */,
+				F4B2083F293F9E7F0030E6F0 /* PLMSheetBaseView.swift */,
+				F4B2083D293F9DE30030E6F0 /* PLMSheetController.swift */,
+				F4B20839293F9B9B0030E6F0 /* PLMSheetDataSource.swift */,
+				F4B2083A293F9B9B0030E6F0 /* PLMSheetView.swift */,
+				F4B2082F293F717B0030E6F0 /* PLMPlanListingBulletView.swift */,
+				F4B20831293F717B0030E6F0 /* PLMPlanListingCollectionView.swift */,
+				F4B20830293F717B0030E6F0 /* PLMPlanListingView.swift */,
+				F4B20875293FB7E80030E6F0 /* PLMControlBar.swift */,
+				F4B20874293FB7E80030E6F0 /* PLMImageHolderView.swift */,
+				F4B20872293FB7D70030E6F0 /* PLMColorBar.swift */,
+				F4B20878293FB7F10030E6F0 /* PLMShapesBarForiPhone.swift */,
+				F4B20870293FB7D10030E6F0 /* PLMColorBarForiPhone.swift */,
+				F4B20832293F717B0030E6F0 /* PLMPlansListingCellView.swift */,
+				F4B2082D293F70F90030E6F0 /* PLMTabContents.swift */,
+				F4B20825293F6F5E0030E6F0 /* PLMMainView.swift */,
+				F4B20824293F6F5E0030E6F0 /* SplashScreenView.swift */,
+				F4B207F1293F6F060030E6F0 /* AppDelegate.swift */,
+				F4B207F3293F6F060030E6F0 /* SceneDelegate.swift */,
+				F4B207F5293F6F060030E6F0 /* ViewController.swift */,
+				F4B20828293F6FC00030E6F0 /* PLMPresenter.swift */,
+				F4B20845293FA0940030E6F0 /* PLMLoading.swift */,
+				F4B20843293FA01B0030E6F0 /* BlurView.swift */,
+				F4B207F7293F6F060030E6F0 /* Main.storyboard */,
+				F4B207FD293F6F080030E6F0 /* Assets.xcassets */,
+				F4B207FF293F6F080030E6F0 /* LaunchScreen.storyboard */,
+				F4B20802293F6F080030E6F0 /* Info.plist */,
+				F4B207FA293F6F060030E6F0 /* MarkUP.xcdatamodeld */,
+				F4B20849293FB3B00030E6F0 /* AttachmentsPicker.swift */,
+			);
+			path = MarkUP;
+			sourceTree = "<group>";
+		};
+		F4B2080A293F6F080030E6F0 /* MarkUPTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B2080B293F6F080030E6F0 /* MarkUPTests.swift */,
+			);
+			path = MarkUPTests;
+			sourceTree = "<group>";
+		};
+		F4B20814293F6F080030E6F0 /* MarkUPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B20815293F6F080030E6F0 /* MarkUPUITests.swift */,
+				F4B20817293F6F080030E6F0 /* MarkUPUITestsLaunchTests.swift */,
+			);
+			path = MarkUPUITests;
+			sourceTree = "<group>";
+		};
+		F4B2084B293FB4AD0030E6F0 /* ShapesItems */ = {
+			isa = PBXGroup;
+			children = (
+				F4B2084C293FB4AD0030E6F0 /* PLMRoundMarker.swift */,
+				F4B2084D293FB4AD0030E6F0 /* PLMArcsMarker.swift */,
+				F4B2084E293FB4AD0030E6F0 /* PLMArrowMarker.swift */,
+				F4B2084F293FB4AD0030E6F0 /* PLMRectMarker.swift */,
+			);
+			path = ShapesItems;
+			sourceTree = "<group>";
+		};
+		F4B20850293FB4AD0030E6F0 /* SupportingComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F4B20866293FB4C80030E6F0 /* PLMDragHolders.swift */,
+				F4B20867293FB4C80030E6F0 /* PLMShapeMarker.swift */,
+				F4B20851293FB4AD0030E6F0 /* PLMDBHandler.swift */,
+				F4B20852293FB4AD0030E6F0 /* PLMDBProcessor.swift */,
+				F4B2086A293FB5B50030E6F0 /* PLMMarkedLayers.swift */,
+				F4B2086C293FB5BD0030E6F0 /* PLMMarkerLayersCreaterExt.swift */,
+				F4B2086E293FB5C70030E6F0 /* PLMSideLayerBar.swift */,
+			);
+			path = SupportingComponents;
+			sourceTree = "<group>";
+		};
+		F4B20853293FB4AD0030E6F0 /* AttachmentItems */ = {
+			isa = PBXGroup;
+			children = (
+				F4B20854293FB4AD0030E6F0 /* PLMTextMarker.swift */,
+				F4B20855293FB4AD0030E6F0 /* PLMImageMarker.swift */,
+			);
+			path = AttachmentItems;
+			sourceTree = "<group>";
+		};
+		F4B20856293FB4AD0030E6F0 /* DrawItems */ = {
+			isa = PBXGroup;
+			children = (
+				F4B20857293FB4AD0030E6F0 /* PLMPathMarker.swift */,
+				F4B20858293FB4AD0030E6F0 /* PLMHighLightMarker.swift */,
+			);
+			path = DrawItems;
+			sourceTree = "<group>";
+		};
+		F4B20859293FB4AD0030E6F0 /* MeasurmentsItem */ = {
+			isa = PBXGroup;
+			children = (
+				F4B2085A293FB4AD0030E6F0 /* PLMRullerMarker.swift */,
+			);
+			path = MeasurmentsItem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4B207ED293F6F060030E6F0 /* MarkUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B2081B293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUP" */;
+			buildPhases = (
+				F4B207EA293F6F060030E6F0 /* Sources */,
+				F4B207EB293F6F060030E6F0 /* Frameworks */,
+				F4B207EC293F6F060030E6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkUP;
+			packageProductDependencies = (
+				F4B2082B293F70BE0030E6F0 /* AppearanceFramework */,
+				F4B2087F293FBA8E0030E6F0 /* PlanSheetComputing */,
+			);
+			productName = MarkUP;
+			productReference = F4B207EE293F6F060030E6F0 /* MarkUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4B20806293F6F080030E6F0 /* MarkUPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B2081E293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUPTests" */;
+			buildPhases = (
+				F4B20803293F6F080030E6F0 /* Sources */,
+				F4B20804293F6F080030E6F0 /* Frameworks */,
+				F4B20805293F6F080030E6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B20809293F6F080030E6F0 /* PBXTargetDependency */,
+			);
+			name = MarkUPTests;
+			productName = MarkUPTests;
+			productReference = F4B20807293F6F080030E6F0 /* MarkUPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4B20810293F6F080030E6F0 /* MarkUPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B20821293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUPUITests" */;
+			buildPhases = (
+				F4B2080D293F6F080030E6F0 /* Sources */,
+				F4B2080E293F6F080030E6F0 /* Frameworks */,
+				F4B2080F293F6F080030E6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B20813293F6F080030E6F0 /* PBXTargetDependency */,
+			);
+			name = MarkUPUITests;
+			productName = MarkUPUITests;
+			productReference = F4B20811293F6F080030E6F0 /* MarkUPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B207E6293F6F060030E6F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F4B207ED293F6F060030E6F0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F4B20806293F6F080030E6F0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F4B207ED293F6F060030E6F0;
+					};
+					F4B20810293F6F080030E6F0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = F4B207ED293F6F060030E6F0;
+					};
+				};
+			};
+			buildConfigurationList = F4B207E9293F6F060030E6F0 /* Build configuration list for PBXProject "MarkUP" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B207E5293F6F060030E6F0;
+			packageReferences = (
+				F4B2082A293F70BE0030E6F0 /* XCRemoteSwiftPackageReference "appearanceframework" */,
+				F4B2087E293FBA8E0030E6F0 /* XCRemoteSwiftPackageReference "plansheetcomputing" */,
+			);
+			productRefGroup = F4B207EF293F6F060030E6F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B207ED293F6F060030E6F0 /* MarkUP */,
+				F4B20806293F6F080030E6F0 /* MarkUPTests */,
+				F4B20810293F6F080030E6F0 /* MarkUPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B207EC293F6F060030E6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B20801293F6F080030E6F0 /* LaunchScreen.storyboard in Resources */,
+				F4B207FE293F6F080030E6F0 /* Assets.xcassets in Resources */,
+				F4B207F9293F6F060030E6F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B20805293F6F080030E6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B2080F293F6F080030E6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B207EA293F6F060030E6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B20836293F717B0030E6F0 /* PLMPlanListingCollectionView.swift in Sources */,
+				F4B20860293FB4AD0030E6F0 /* PLMDBProcessor.swift in Sources */,
+				F4B20879293FB7F10030E6F0 /* PLMShapesBarForiPhone.swift in Sources */,
+				F4B20864293FB4AD0030E6F0 /* PLMHighLightMarker.swift in Sources */,
+				F4B2083C293F9B9B0030E6F0 /* PLMSheetView.swift in Sources */,
+				F4B207F6293F6F060030E6F0 /* ViewController.swift in Sources */,
+				F4B20863293FB4AD0030E6F0 /* PLMPathMarker.swift in Sources */,
+				F4B2086F293FB5C70030E6F0 /* PLMSideLayerBar.swift in Sources */,
+				F4B20834293F717B0030E6F0 /* PLMPlanListingBulletView.swift in Sources */,
+				F4B2085F293FB4AD0030E6F0 /* PLMDBHandler.swift in Sources */,
+				F4B2085E293FB4AD0030E6F0 /* PLMRectMarker.swift in Sources */,
+				F4B20862293FB4AD0030E6F0 /* PLMImageMarker.swift in Sources */,
+				F4B207F2293F6F060030E6F0 /* AppDelegate.swift in Sources */,
+				F4B2087D293FB9620030E6F0 /* PLMSheetBaseViewPanExtension.swift in Sources */,
+				F4B2087B293FB91A0030E6F0 /* PLMTextAlertView.swift in Sources */,
+				F4B2085D293FB4AD0030E6F0 /* PLMArrowMarker.swift in Sources */,
+				F4B20873293FB7D70030E6F0 /* PLMColorBar.swift in Sources */,
+				F4B20877293FB7E80030E6F0 /* PLMControlBar.swift in Sources */,
+				F4B2086D293FB5BD0030E6F0 /* PLMMarkerLayersCreaterExt.swift in Sources */,
+				F4B20871293FB7D10030E6F0 /* PLMColorBarForiPhone.swift in Sources */,
+				F4B20844293FA01B0030E6F0 /* BlurView.swift in Sources */,
+				F4B2086B293FB5B50030E6F0 /* PLMMarkedLayers.swift in Sources */,
+				F4B20837293F717B0030E6F0 /* PLMPlansListingCellView.swift in Sources */,
+				F4B20842293F9F530030E6F0 /* PLMPlansListingDataSource.swift in Sources */,
+				F4B2083B293F9B9B0030E6F0 /* PLMSheetDataSource.swift in Sources */,
+				F4B2084A293FB3B00030E6F0 /* AttachmentsPicker.swift in Sources */,
+				F4B20865293FB4AD0030E6F0 /* PLMRullerMarker.swift in Sources */,
+				F4B20861293FB4AD0030E6F0 /* PLMTextMarker.swift in Sources */,
+				F4B20876293FB7E80030E6F0 /* PLMImageHolderView.swift in Sources */,
+				F4B2085C293FB4AD0030E6F0 /* PLMArcsMarker.swift in Sources */,
+				F4B2085B293FB4AD0030E6F0 /* PLMRoundMarker.swift in Sources */,
+				F4B20848293FA31E0030E6F0 /* PLMPlansListingDataTypes.swift in Sources */,
+				F4B20846293FA0940030E6F0 /* PLMLoading.swift in Sources */,
+				F4B2083E293F9DE30030E6F0 /* PLMSheetController.swift in Sources */,
+				F4B20829293F6FC00030E6F0 /* PLMPresenter.swift in Sources */,
+				F4B20840293F9E7F0030E6F0 /* PLMSheetBaseView.swift in Sources */,
+				F4B20826293F6F5E0030E6F0 /* SplashScreenView.swift in Sources */,
+				F4B20827293F6F5E0030E6F0 /* PLMMainView.swift in Sources */,
+				F4B20868293FB4C80030E6F0 /* PLMDragHolders.swift in Sources */,
+				F4B20835293F717B0030E6F0 /* PLMPlanListingView.swift in Sources */,
+				F4B2082E293F70F90030E6F0 /* PLMTabContents.swift in Sources */,
+				F4B20869293FB4C80030E6F0 /* PLMShapeMarker.swift in Sources */,
+				F4B207F4293F6F060030E6F0 /* SceneDelegate.swift in Sources */,
+				F4B207FC293F6F060030E6F0 /* MarkUP.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B20803293F6F080030E6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B2080C293F6F080030E6F0 /* MarkUPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B2080D293F6F080030E6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B20818293F6F080030E6F0 /* MarkUPUITestsLaunchTests.swift in Sources */,
+				F4B20816293F6F080030E6F0 /* MarkUPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B20809293F6F080030E6F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B207ED293F6F060030E6F0 /* MarkUP */;
+			targetProxy = F4B20808293F6F080030E6F0 /* PBXContainerItemProxy */;
+		};
+		F4B20813293F6F080030E6F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B207ED293F6F060030E6F0 /* MarkUP */;
+			targetProxy = F4B20812293F6F080030E6F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4B207F7293F6F060030E6F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B207F8293F6F060030E6F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B207FF293F6F080030E6F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B20800293F6F080030E6F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B20819293F6F080030E6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4B2081A293F6F080030E6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B2081C293F6F080030E6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarkUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B2081D293F6F080030E6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarkUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4B2081F293F6F080030E6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkUP.app/MarkUP";
+			};
+			name = Debug;
+		};
+		F4B20820293F6F080030E6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarkUP.app/MarkUP";
+			};
+			name = Release;
+		};
+		F4B20822293F6F080030E6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkUP;
+			};
+			name = Debug;
+		};
+		F4B20823293F6F080030E6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 686GT589HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linarc.MarkUPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarkUP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B207E9293F6F060030E6F0 /* Build configuration list for PBXProject "MarkUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B20819293F6F080030E6F0 /* Debug */,
+				F4B2081A293F6F080030E6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B2081B293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B2081C293F6F080030E6F0 /* Debug */,
+				F4B2081D293F6F080030E6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B2081E293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B2081F293F6F080030E6F0 /* Debug */,
+				F4B20820293F6F080030E6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B20821293F6F080030E6F0 /* Build configuration list for PBXNativeTarget "MarkUPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B20822293F6F080030E6F0 /* Debug */,
+				F4B20823293F6F080030E6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4B2082A293F70BE0030E6F0 /* XCRemoteSwiftPackageReference "appearanceframework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/linarc/development/mobile-development/iOS/appearanceframework.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F4B2087E293FBA8E0030E6F0 /* XCRemoteSwiftPackageReference "plansheetcomputing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/SunilSimon/plansheetcomputing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4B2082B293F70BE0030E6F0 /* AppearanceFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4B2082A293F70BE0030E6F0 /* XCRemoteSwiftPackageReference "appearanceframework" */;
+			productName = AppearanceFramework;
+		};
+		F4B2087F293FBA8E0030E6F0 /* PlanSheetComputing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4B2087E293FBA8E0030E6F0 /* XCRemoteSwiftPackageReference "plansheetcomputing" */;
+			productName = PlanSheetComputing;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F4B207FA293F6F060030E6F0 /* MarkUP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4B207FB293F6F060030E6F0 /* MarkUP.xcdatamodel */,
+			);
+			currentVersion = F4B207FB293F6F060030E6F0 /* MarkUP.xcdatamodel */;
+			path = MarkUP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4B207E6293F6F060030E6F0 /* Project object */;
+}

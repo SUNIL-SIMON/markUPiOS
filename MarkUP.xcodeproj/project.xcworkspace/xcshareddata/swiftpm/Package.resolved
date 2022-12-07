@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "appearanceframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/linarc/development/mobile-development/iOS/appearanceframework.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2175e55e556a01f31f4d392e9781f1006003176d"
+      }
+    },
+    {
+      "identity" : "plansheetcomputing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/SunilSimon/plansheetcomputing.git",
+      "state" : {
+        "revision" : "0b6c7beab0e0afd4f8606fcae333d26cfd7c506a",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

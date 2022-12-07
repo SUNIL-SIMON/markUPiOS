@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="411px" height="170px" viewBox="0 0 411 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Gradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.1048662%" y1="-9.70970912%" x2="50.1048662%" y2="108.277968%" id="linearGradient-1">
+            <stop stop-color="#FF6926" offset="0%"></stop>
+            <stop stop-color="#FBA754" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gradient" fill="url(#linearGradient-1)">
+            <path d="M0,117.386 L0,0 L411,0 L411,117.386 C363.138,149.386 288.877,169.933 205.5,169.933 C122.123,169.933 47.8626,149.386 0,117.386 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
